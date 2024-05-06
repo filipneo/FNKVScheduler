@@ -1,0 +1,210 @@
+{
+	"navigation": {
+		"title": "Scheduler",
+		"dashboard": "Dashboard",
+		"shifts": "Schedule",
+		"admin": {
+			"employees": "Employees",
+			"departments": "Workplace",
+			"vacations": "Vacations"
+		}
+	},
+	"components": {
+		"themeButton": {
+			"light": "Light",
+			"dark": "Dark",
+			"automatic": "Automatic"
+		},
+		"absences": {
+			"absences": "Absences",
+			"todaysAbsences": "Today's absence",
+			"noAbsences": "No absence"
+		},
+		"requestVacationDialog": {
+			"trigger": "Request for vacation",
+			"title": "Vacation request",
+			"dateInput": "Select the vacation period",
+			"employeeSelect": "Employee",
+			"noteInput": "Note",
+			"submitButton": "Request"
+		},
+		"weeksCalEvents": {
+			"title": "Week's events",
+			"on": "On:"
+		},
+		"calEventDialog": {
+			"title": "Title",
+			"note": "Note",
+			"from": "From",
+			"to": "To",
+			"date": "Date",
+			"saveButton": "Save",
+			"deleteTab": {
+				"title": "Are you sure?",
+				"description": "Deleting an event is irreversible.",
+				"deleteButton": "Delete"
+			},
+			"detail": "Detail",
+			"update": "Edit",
+			"delete": "Delete"
+		},
+		"vacationsToResolve": {
+			"title": "Requests for vacation to be processed",
+			"from": "From",
+			"to": "To",
+			"on": "On",
+			"approve": "Approve",
+			"deny": "Deny"
+		},
+		"logOutAlert": {
+			"areYouSure": "Are you sure you want to log out?",
+			"cancel": "Cancel",
+			"logOut": "Log out"
+		}
+	},
+	"pages": {
+		"root": {
+			"title": "FNKV Scheduler",
+			"link": {
+				"user": "Employee",
+				"admin": "Admin"
+			}
+		},
+		"auth": {
+			"title": "Admin",
+			"usernameInput": "Username",
+			"passwordInput": "Password",
+			"invalidLogin": "Wrong password or username",
+			"forgotPassword": {
+				"label": "Forgot password?",
+				"link": "Reset"
+			},
+			"submitButton": "Log in"
+		},
+		"employees": {
+			"name": "Name",
+			"firstName": "First Name",
+			"lastName": "Last Name",
+			"email": "Email",
+			"nameCode": "Code",
+			"workRole": "Work role",
+			"phone": "Phone",
+			"preferredAmbulances": "Preferred ambulances",
+			"fixedAmbulances": "Fixed ambulances",
+			"fixedDays": "Fixed days",
+			"range": "Range",
+			"searchEmployee": "Search employee",
+			"cancel": "Cancel",
+			"newEmployee": "New employee",
+			"editEmployee": "Edit employee",
+			"workRoles": "Work roles",
+			"edit": "Edit",
+			"delete": "Delete",
+			"areYouSure": "Are you sure?",
+			"deleteAlertDescription": "Deleting an employee is irreversible.",
+			"deleteEmpCategeoryAlertDescription": "Deleting a work role is irreversible.",
+			"copyEmail": "Copy Email",
+			"create": "Create",
+			"save": "Save",
+			"newWorkRole": "New role",
+			"monday": "Monday",
+			"tuesday": "Tuesday",
+			"wednesday": "Wednesday",
+			"thursday": "Thursday",
+			"friday": "Friday",
+			"saturday": "Saturday",
+			"sunday": "Sunday"
+		},
+		"departments": {
+			"addDepartment": "Add department",
+			"newDepartment": "New department",
+			"editDepartment": "Edit department",
+			"addAmbulance": "Add ambulance",
+			"newAmbulance": "New ambulance",
+			"editAmbulance": "Edit ambulance",
+			"areYouSure": "Are you sure?",
+			"deleteDepartmentAlertDescription": "Deleting a department is irreversible.",
+			"deleteAmbulanceAlertDescription": "Deleting an ambulance is irreversible.",
+			"edit": "Edit",
+			"name": "Name",
+			"headEmployee": "Head employee",
+			"noHeadEmployee": "No head employee",
+			"create": "Create",
+			"save": "Save",
+			"cancel": "Cancel",
+			"delete": "Delete"
+		},
+		"vacations": {
+			"name": "Name",
+			"from": "From",
+			"to": "To",
+			"state": "State",
+			"note": "Note",
+			"searchEmployee": "Search employee",
+			"cancel": "Cancel",
+			"edit": "Edit",
+			"delete": "Delete",
+			"areYouSure": "Are you sure?",
+			"deleteAlertDescription": "Deleting a vacation is irreversible.",
+			"newVacation": "New vacation",
+			"editVacation": "Edit vacation",
+			"chooseVacationPeriod": "Choose vacation period",
+			"employee": "Employee",
+			"create": "Create",
+			"save": "Save",
+			"approved": "Approved",
+			"denied": "Denied",
+			"waiting": "Waiting",
+			"changed": "Changed"
+		},
+		"scheduler": {
+			"previous": "Previous",
+			"next": "Next",
+			"current": "Current",
+			"export": "Export",
+			"todaysDate": "Today's date",
+			"week": "Week",
+			"monday": "Mon",
+			"tuesday": "Tue",
+			"wednesday": "Wed",
+			"thursday": "Thu",
+			"friday": "Fri",
+			"saturday": "Sat",
+			"sunday": "Sun",
+			"generateShiftDialog": {
+				"trigger": "Generate",
+				"title": "Generate shifts",
+				"generateByPreferences": "Generate by preferences",
+				"copyLastWeek": "Copy last week",
+				"selectWeek": "Select a week"
+			},
+			"shiftDialog": {
+				"employee": "Employee",
+				"name": "Name",
+				"typeOfShift": "Type of shift",
+				"date": "Date",
+				"note": "Note",
+				"save": "Save",
+				"create": "Create",
+				"newShift": "New shift",
+				"areYouSure": "Are you sure?",
+				"deleteAlertDescription": "Deleting a shift is irreversible.",
+				"detail": "Detail",
+				"edit": "Edit",
+				"delete": "Delete",
+				"morningShift": "Morning",
+				"afternoonShift": "Afternoon",
+				"dayShift": "Day"
+			},
+			"createCalEventDialog": {
+				"trigger": "Create an event",
+				"title": "New event",
+				"name": "Title",
+				"from": "On/From",
+				"to": "To",
+				"note": "Note",
+				"create": "Create"
+			}
+		}
+	}
+}

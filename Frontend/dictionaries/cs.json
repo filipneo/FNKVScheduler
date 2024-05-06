@@ -1,0 +1,210 @@
+{
+	"navigation": {
+		"title": "Plánovač",
+		"dashboard": "Nástěnka",
+		"shifts": "Služby",
+		"admin": {
+			"employees": "Zaměstnanci",
+			"departments": "Pracoviště",
+			"vacations": "Dovolené"
+		}
+	},
+	"components": {
+		"themeButton": {
+			"light": "Světlý",
+			"dark": "Tmavý",
+			"automatic": "Automaticky"
+		},
+		"absences": {
+			"absences": "Absence",
+			"todaysAbsences": "Dnešní absence",
+			"noAbsences": "Žádné absence"
+		},
+		"requestVacationDialog": {
+			"trigger": "Požádat o dovolenou",
+			"title": "Žádost o dovolenou",
+			"dateInput": "Zvolte období dovolené",
+			"employeeSelect": "Zaměstnanec",
+			"noteInput": "Poznámka",
+			"submitButton": "Požádat"
+		},
+		"weeksCalEvents": {
+			"title": "Údálosti pro tento týden",
+			"on": "Dne:"
+		},
+		"calEventDialog": {
+			"title": "Název",
+			"note": "Poznámka",
+			"from": "Od",
+			"to": "Do",
+			"date": "Datum",
+			"saveButton": "Uložit",
+			"deleteTab": {
+				"title": "Jste si jisti?",
+				"description": "Smazání události je nevratné.",
+				"deleteButton": "Smazat"
+			},
+			"detail": "Detail",
+			"update": "Upravit",
+			"delete": "Smazat"
+		},
+		"vacationsToResolve": {
+			"title": "Žádosti o dovolenou ke zpracování",
+			"from": "Od",
+			"to": "Do",
+			"on": "Dne",
+			"approve": "Schválit",
+			"deny": "Zamítnout"
+		},
+		"logOutAlert": {
+			"areYouSure": "Opravdu se chcete odhlásit?",
+			"cancel": "Zrušit",
+			"logOut": "Odhlásit"
+		}
+	},
+	"pages": {
+		"root": {
+			"title": "FNKV Plánovač",
+			"link": {
+				"user": "Zaměstnanec",
+				"admin": "Správce"
+			}
+		},
+		"auth": {
+			"title": "Správce",
+			"usernameInput": "Uživatelské jméno",
+			"passwordInput": "Heslo",
+			"invalidLogin": "Chybné heslo nebo uživatelské jméno",
+			"forgotPassword": {
+				"label": "Zapomněli jste heslo?",
+				"link": "Resetovat"
+			},
+			"submitButton": "Přihlásit"
+		},
+		"employees": {
+			"name": "Jméno",
+			"firstName": "Jméno",
+			"lastName": "Příjmení",
+			"email": "Email",
+			"nameCode": "Zkratka",
+			"workRole": "Pozice",
+			"phone": "Telefon",
+			"preferredAmbulances": "Preferované ambulance",
+			"fixedAmbulances": "Fixované ambulance",
+			"fixedDays": "Fixované dny",
+			"range": "Rozmezí",
+			"searchEmployee": "Hledat zaměstnance",
+			"cancel": "Zrušit",
+			"newEmployee": "Nový zaměstnanec",
+			"editEmployee": "Upravit zaměstnance",
+			"workRoles": "Pracovní pozice",
+			"areYouSure": "Jste si jisti?",
+			"deleteAlertDescription": "Smazání zaměstnance je nevratné.",
+			"deleteEmpCategeoryAlertDescription": "Smazání pracovní pozice je nevratné.",
+			"edit": "Upravit",
+			"delete": "Smazat",
+			"copyEmail": "Kopírovat email",
+			"create": "Vytvořit",
+			"save": "Uložit",
+			"newWorkRole": "Nová pozice",
+			"monday": "Pondělí",
+			"tuesday": "Úterý",
+			"wednesday": "Středa",
+			"thursday": "Čtvrtek",
+			"friday": "Pátek",
+			"saturday": "Sobota",
+			"sunday": "Neděle"
+		},
+		"departments": {
+			"addDepartment": "Přidat oddělení",
+			"newDepartment": "Nové oddělení",
+			"editDepartment": "Upravit oddělení",
+			"addAmbulance": "Přidat ambulanci",
+			"newAmbulance": "Nová ambulance",
+			"editAmbulance": "Upravit ambulanci",
+			"areYouSure": "Jste si jisti?",
+			"deleteDepartmentAlertDescription": "Smazání oddělení je nevratné.",
+			"deleteAmbulanceAlertDescription": "Smazání ambulance je nevratné.",
+			"edit": "Upravit",
+			"name": "Název",
+			"headEmployee": "Vedoucí",
+			"noHeadEmployee": "Žádný vedoucí",
+			"create": "Vytvořit",
+			"save": "Uložit",
+			"cancel": "Zrušit",
+			"delete": "Smazat"
+		},
+		"vacations": {
+			"name": "Jméno",
+			"from": "Od",
+			"to": "Do",
+			"state": "Stav",
+			"note": "Poznámka",
+			"searchEmployee": "Hledat zaměstnance",
+			"cancel": "Zrušit",
+			"edit": "Upravit",
+			"delete": "Smazat",
+			"areYouSure": "Jste si jisti?",
+			"deleteAlertDescription": "Smazání dovolené je nevratné.",
+			"newVacation": "Nová dovolená",
+			"editVacation": "Upravit dovolenou",
+			"chooseVacationPeriod": "Zvolte období dovolené",
+			"employee": "Zaměstnanec",
+			"create": "Vytvořit",
+			"save": "Uložit",
+			"approved": "Schválena",
+			"denied": "Zamítnuta",
+			"waiting": "Čeká",
+			"changed": "Změněna"
+		},
+		"scheduler": {
+			"previous": "Předchozí",
+			"next": "Další",
+			"current": "Aktuální",
+			"export": "Export",
+			"todaysDate": "Dnešní datum",
+			"week": "Týden",
+			"monday": "Po",
+			"tuesday": "Út",
+			"wednesday": "St",
+			"thursday": "Čt",
+			"friday": "Pá",
+			"saturday": "So",
+			"sunday": "Ne",
+			"generateShiftDialog": {
+				"trigger": "Generovat",
+				"title": "Generovat směny",
+				"generateByPreferences": "Generovat dle preferencí",
+				"copyLastWeek": "Kopírovat předchozí týden",
+				"selectWeek": "Vybrat týden"
+			},
+			"shiftDialog": {
+				"employee": "Zaměstnanec",
+				"name": "Jméno",
+				"typeOfShift": "Typ směny",
+				"date": "Datum",
+				"note": "Poznámka",
+				"save": "Uložit",
+				"create": "Vytvořit",
+				"newShift": "Nová služba",
+				"areYouSure": "Jste si jisti?",
+				"deleteAlertDescription": "Smazání směny je nevratné.",
+				"detail": "Detail",
+				"edit": "Upravit",
+				"delete": "Smazat",
+				"morningShift": "Dopolední",
+				"afternoonShift": "Odpolední",
+				"dayShift": "Celodenní"
+			},
+			"createCalEventDialog": {
+				"trigger": "Vytvořit událost",
+				"title": "Nová událost",
+				"name": "Název",
+				"from": "Dne/Od",
+				"to": "Do",
+				"note": "Poznámka",
+				"create": "Vytvořit"
+			}
+		}
+	}
+}
