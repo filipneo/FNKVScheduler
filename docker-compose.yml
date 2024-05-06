@@ -5,7 +5,7 @@ services:
       context: Frontend
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "80:3000"
 
   api:
     container_name: API
@@ -13,7 +13,7 @@ services:
       context: API
       dockerfile: Dockerfile
     ports:
-      - "49501:8080"
+      - "8080:8080"
     environment:
       - "ConnectionStrings:MySql=Server=SqlServer;Port=3306;Database=fnkvschedulerdb;Uid=api;Pwd=1234;SslMode=None;ConnectionReset=false;connect timeout=3600;AllowPublicKeyRetrieval=True"
   
@@ -23,7 +23,7 @@ services:
       context: Database
       dockerfile: Dockerfile
     ports:
-      - "49301:3306"
+      - "3306:3306"
     environment:
       MYSQL_DATABASE: fnkvschedulerdb
       MYSQL_ROOT_PASSWORD: root
