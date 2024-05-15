@@ -2,7 +2,6 @@ import { AxiosResponse } from "axios";
 import { CalEvent } from "./model";
 import { axiosInstance, setAuthToken } from "../axiosInstance";
 
-// [AllowAnonymous]
 export const getAllCalEvents = async (): Promise<CalEvent[]> => {
 	try {
 		const response: AxiosResponse<CalEvent[]> = await axiosInstance.get("/calevent/all");

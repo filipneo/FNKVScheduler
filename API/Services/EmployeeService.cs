@@ -222,8 +222,39 @@ namespace SchedulerAppAPICore.Services
 
 		public async Task<List<Employee>> GetEmployeesByCategory(int[] categories)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				var employees = await _context.Employees
+					.Where(e => categories.Contains(e.EmpCategoryId))
+					.Include(e => e.EmpCategory)
+					.OrderBy(e => e.FirstName)
+					.Select(e => new Employee
+					{
+						EmployeeId = e.EmployeeId,
+						FirstName = e.FirstName,
+						LastName = e.LastName,
+						Phone = e.Phone,
+						Email = e.Email,
+						NameCode = e.NameCode,
+						EmpCategoryId = e.EmpCategoryId,
+						EmpCategory = e.EmpCategory,
+						FromLimit = e.FromLimit,
+						ToLimit = e.ToLimit,
+						PreferredAmbulanceIds = e.PreferredAmbulances.Select(a => a.AmbulanceId).ToList(),
+						FixedAmbulanceIds = e.FixedAmbulances.Select(a => a.AmbulanceId).ToList(),
+						FixedDays = e.FixedDays
+					})
+					.ToListAsync();
+
+				return employees;
+			}
+			catch (Exception ex)
+			{
+				DefaultLogMessage(ex);
+				return new List<Employee>();
+			}
 		}
+
 
 		private void DefaultLogMessage(Exception ex)
 		{

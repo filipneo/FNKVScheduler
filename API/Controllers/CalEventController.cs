@@ -12,7 +12,6 @@ namespace SchedulerAppAPICore.Controllers
 	{
 		private readonly ICalEventService _calEventService = calEventService;
 
-		[AllowAnonymous]
 		[HttpGet("all")]
 		public async Task<List<CalEvent>> GetAll()
 		{

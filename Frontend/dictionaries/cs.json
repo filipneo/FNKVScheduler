@@ -173,7 +173,7 @@
 			"sunday": "Ne",
 			"generateShiftDialog": {
 				"trigger": "Generovat",
-				"title": "Generovat směny",
+				"title": "Generovat služby",
 				"generateByPreferences": "Generovat dle preferencí",
 				"copyLastWeek": "Kopírovat předchozí týden",
 				"selectWeek": "Vybrat týden"
@@ -181,14 +181,14 @@
 			"shiftDialog": {
 				"employee": "Zaměstnanec",
 				"name": "Jméno",
-				"typeOfShift": "Typ směny",
+				"typeOfShift": "Typ služby",
 				"date": "Datum",
 				"note": "Poznámka",
 				"save": "Uložit",
 				"create": "Vytvořit",
 				"newShift": "Nová služba",
 				"areYouSure": "Jste si jisti?",
-				"deleteAlertDescription": "Smazání směny je nevratné.",
+				"deleteAlertDescription": "Smazání služby je nevratné.",
 				"detail": "Detail",
 				"edit": "Upravit",
 				"delete": "Smazat",

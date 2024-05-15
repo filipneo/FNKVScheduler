@@ -19,6 +19,7 @@ namespace SchedulerAppAPICore.Controllers
 			return await _departmentService.GetAllDepartments();
 		}
 
+		[AllowAnonymous]
 		[HttpGet("allWithAmbulances")]
 		public async Task<List<Department>> GetAllWithAmbulances()
 		{
