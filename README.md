@@ -41,6 +41,7 @@ Adjust the values of these paramaters in `docker-compose.yml` to your preference
 
 **Database Container:**
 - Change `MYSQL_ROOT_PASSWORD` value to a secure password.
+
 **API Container:**
 - Change `Pwd` value in the environment section to a secure password.
 
@@ -56,6 +57,3 @@ Adjust the values of these paramaters in `docker-compose.yml` to your preference
 
 ## Stopping the Application
 - Execute `docker-compose down` to stop the application.
-
-## License
-This project is licensed under the MIT License, allowing for open collaboration and adaptation of the codebase for various purposes.
