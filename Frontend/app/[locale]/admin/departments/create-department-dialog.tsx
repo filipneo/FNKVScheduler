@@ -45,7 +45,7 @@ export default function AddDepartmentDialog({ employees, onPost }: { employees: 
 			/** @ts-expect-error */
 			maxCap: newDepartment.maxCap !== "" ? Number(newDepartment.maxCap) : null
 		};
-	
+
 		console.log(payload);
 		var responseDepartment = await createDepartment(payload, authToken);
 		onPost(responseDepartment);
@@ -90,20 +90,18 @@ export default function AddDepartmentDialog({ employees, onPost }: { employees: 
 										<SelectValue placeholder={t("headEmployee")} />
 									</SelectTrigger>
 
-									<SelectContent>
-										<ScrollArea className="h-auto max-h-72 rounded-md">
-											{employees?.map((employee) => (
-												<SelectItem
-													key={employee.employeeId}
-													value={String(employee.employeeId)}
-												>
-													<div className="flex flex-row items-center gap-x-2">
-														<div style={{ backgroundColor: employee.empCategory.color }} className="rounded-full w-3 h-3" />
-														<p>{employee.firstName} {employee.lastName}</p>
-													</div>
-												</SelectItem>
-											))}
-										</ScrollArea>
+									<SelectContent className="h-auto max-h-72">
+										{employees?.map((employee) => (
+											<SelectItem
+												key={employee.employeeId}
+												value={String(employee.employeeId)}
+											>
+												<div className="flex flex-row items-center gap-x-2">
+													<div style={{ backgroundColor: employee.empCategory.color }} className="rounded-full w-3 h-3" />
+													<p>{employee.firstName} {employee.lastName}</p>
+												</div>
+											</SelectItem>
+										))}
 									</SelectContent>
 								</Select>
 							)}

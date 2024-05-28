@@ -105,31 +105,29 @@ export default function UpdateDepartmentDialog({
 										}
 									</SelectTrigger>
 
-									<SelectContent>
-										<ScrollArea className="h-auto max-h-72 rounded-md">
-											{employees?.map((employee) => (
-												<SelectItem
-													key={employee.employeeId}
-													value={String(employee.employeeId)}
-												>
-													<div className="flex flex-row items-center gap-x-2">
-														<div style={{ backgroundColor: employee.empCategory.color }} className="rounded-full w-3 h-3" />
-														<p>{employee.firstName} {employee.lastName}</p>
-													</div>
-												</SelectItem>
-											))}
-										</ScrollArea>
+									<SelectContent className="h-auto max-h-72">
 										{
 											department.headEmpId &&
 
 											<>
-												<Separator orientation="horizontal" className="my-1" />
-
 												<SelectItem value={"none"}>
 													{t("noHeadEmployee")}
 												</SelectItem>
+
+												<Separator orientation="horizontal" className="my-1" />
 											</>
 										}
+										{employees?.map((employee) => (
+											<SelectItem
+												key={employee.employeeId}
+												value={String(employee.employeeId)}
+											>
+												<div className="flex flex-row items-center gap-x-2">
+													<div style={{ backgroundColor: employee.empCategory.color }} className="rounded-full w-3 h-3" />
+													<p>{employee.firstName} {employee.lastName}</p>
+												</div>
+											</SelectItem>
+										))}
 									</SelectContent>
 								</Select>
 							)}

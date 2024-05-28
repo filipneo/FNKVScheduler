@@ -152,8 +152,7 @@ export default function AddVacationDialog({ employees }: { employees: Employee[]
 									<SelectTrigger className="w-2/5">
 										<SelectValue placeholder={t("employee")} />
 									</SelectTrigger>
-									<SelectContent>
-										<ScrollArea className="h-auto max-h-72 rounded-md">
+									<SelectContent className="h-auto max-h-72">
 											{
 												employees?.map((employee) => (
 													<SelectItem
@@ -162,7 +161,6 @@ export default function AddVacationDialog({ employees }: { employees: Employee[]
 													</SelectItem>
 												))
 											}
-										</ScrollArea>
 									</SelectContent>
 								</Select>
 							)}

@@ -124,14 +124,12 @@ export default function RequestVacationDialog({ employees }: { employees: Employ
 										<SelectValue placeholder={t("employeeSelect")} />
 									</SelectTrigger>
 
-									<SelectContent>
-										<ScrollArea className="h-auto max-h-72 rounded-md">
-											{
-												employees?.map((employee) => (
-													<SelectItem key={String(employee.employeeId)} value={String(employee.employeeId)}>{employee.firstName} {employee.lastName}</SelectItem>
-												))
-											}
-										</ScrollArea>
+									<SelectContent className="h-auto max-h-72">
+										{
+											employees?.map((employee) => (
+												<SelectItem key={String(employee.employeeId)} value={String(employee.employeeId)}>{employee.firstName} {employee.lastName}</SelectItem>
+											))
+										}
 									</SelectContent>
 								</Select>
 							)}
