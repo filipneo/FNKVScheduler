@@ -2,7 +2,7 @@
 	"navigation": {
 		"title": "Plánovač",
 		"dashboard": "Nástěnka",
-		"shifts": "Služby",
+		"shifts": "Rozpis",
 		"admin": {
 			"employees": "Zaměstnanci",
 			"departments": "Pracoviště",
@@ -173,7 +173,7 @@
 			"sunday": "Ne",
 			"generateShiftDialog": {
 				"trigger": "Generovat",
-				"title": "Generovat služby",
+				"title": "Generovat rozpis",
 				"generateByPreferences": "Generovat dle preferencí",
 				"copyLastWeek": "Kopírovat předchozí týden",
 				"selectWeek": "Vybrat týden"
