@@ -49,7 +49,7 @@ Adjust the values of these paramaters in `docker-compose.yml` to your preference
  - Update the password in `Database/01_create_user.sql` to match the new password set in `docker-compose.yml` API container.
 
 ### Frontend Configuration
-- Modify the `.env` file located in the `Frontend` directory.
+- Modify the `.env.production` file located in the `Frontend` directory.
 - Update the domain of the URL to the server's address instead of the local environment.
 
 ## Running the Application

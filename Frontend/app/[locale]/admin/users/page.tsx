@@ -44,7 +44,7 @@ export default function UserPage() {
 
 				<CardContent className="flex flex-col mt-4 gap-y-2 w-full">
 					{users.map(users => (
-						<div className="flex flex-row items-center justify-between">
+						<div key={users.userId} className="flex flex-row items-center justify-between">
 							<Label className="text-lg">
 								{users.username}
 							</Label>
