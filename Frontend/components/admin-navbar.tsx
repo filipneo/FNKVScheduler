@@ -1,9 +1,13 @@
 import { useTranslations } from 'next-intl';
+
 import { Link } from '@/navigation';
 import ThemeButton from './theme-button';
 import LogoutButton from './logout-button';
 import LanguageSwitcher from './language-switcher';
+
 import { Label } from "./ui/label";
+import { Users } from 'lucide-react';
+import { Button } from './ui/button';
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function AdminNavbar() {
@@ -19,7 +23,7 @@ export default function AdminNavbar() {
 				</Label>
 			</div>
 
-			<div className='flex-1 flex justify-center'>
+			<div className='absolute left-1/2 transform -translate-x-1/2'>
 				<Tabs className="w-auto">
 					<TabsList defaultValue="admin" className="flex">
 						<Link href="/admin">
@@ -58,6 +62,11 @@ export default function AdminNavbar() {
 			<div className='flex items-center gap-x-2'>
 				<LanguageSwitcher />
 				<ThemeButton />
+				<Link href="/admin/users">
+					<Button variant="outline" size="icon">
+						<Users className="p-0.5" />
+					</Button>
+				</Link>
 				<LogoutButton />
 			</div>
 		</nav>

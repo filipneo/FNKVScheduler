@@ -27,6 +27,7 @@ export default function LogoutButton() {
 
 	const handleLogout = () => {
 		Cookies.remove("authToken");
+		Cookies.remove("currentUser");
 		router.push("/");
 	}
 

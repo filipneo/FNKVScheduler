@@ -38,6 +38,7 @@ export default function AuthPage() {
 		const response = await checkUserExistence(token);
 		if (response !== null) {
 			Cookies.set("authToken", token, { expires: 0.2 }); // 4 Hours
+			Cookies.set("currentUser", loginData.username, {expires: 0.2 })
 			router.push("/admin");
 		} else {
 			setInvalidLogin(t("invalidLogin"))

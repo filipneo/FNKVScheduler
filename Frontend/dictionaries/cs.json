@@ -205,6 +205,16 @@
 				"note": "Poznámka",
 				"create": "Vytvořit"
 			}
+		},
+		"users": {
+			"users": "Správci",
+			"edit": "Upravit",
+			"delete": "Smazat",
+			"newUser": "Nový správce",
+			"username": "Uživatelské jméno",
+			"password": "Heslo",
+			"create": "Vytvořit"
+
 		}
 	}
 }

@@ -205,6 +205,16 @@
 				"note": "Note",
 				"create": "Create"
 			}
+		},
+		"users": {
+			"users": "Admins",
+			"edit": "Edit",
+			"delete": "Delete",
+			"newUser": "New admin",
+			"username": "Username",
+			"password": "Password",
+			"create": "Create"
+
 		}
 	}
 }
